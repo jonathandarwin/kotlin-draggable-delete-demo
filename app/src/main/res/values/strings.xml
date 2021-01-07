@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DraggableLayout</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+</resources>

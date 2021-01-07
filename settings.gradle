@@ -1,0 +1,2 @@
+rootProject.name='DraggableLayout'
+include ':app'
