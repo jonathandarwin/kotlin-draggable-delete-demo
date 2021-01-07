@@ -3,8 +3,6 @@ package com.jonathandarwin.draggablelayout
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.DisplayMetrics
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
@@ -57,15 +55,9 @@ class MainActivity : AppCompatActivity() {
             view.layoutParams = draggableLayoutParam
             view.setImageResource(R.drawable.ic_android)
 
-            var randomX = 0f
-            var randomY = 0f
-
+            var randomX : Float
+            var randomY : Float
             setDeleteBoxCoordinate()
-
-            Log.d("masuksiniga", view.width.toString())
-            Log.d("masuksiniga", "${view.height}")
-
-
             do{
                 // rendering view in safe X and Y coordinate (not exceed the screen)
                 // and outside delete region
